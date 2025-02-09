@@ -17,6 +17,42 @@
         android:theme="@style/Theme.TestLogowania"
         tools:targetApi="31">
         <activity
+            android:name=".Harmonogram1"
+            android:exported="false" />
+        <activity
+            android:name=".Legs"
+            android:exported="false" />
+        <activity
+            android:name=".Chest"
+            android:exported="false" />
+        <activity
+            android:name=".Back"
+            android:exported="false" />
+        <activity
+            android:name=".Buttocks"
+            android:exported="false" />
+        <activity
+            android:name=".Arms"
+            android:exported="false" />
+        <activity
+            android:name=".Stomach"
+            android:exported="false" />
+        <activity
+            android:name=".Selectbodypart"
+            android:exported="false" />
+        <activity
+            android:name=".List_of_exercises"
+            android:exported="false" />
+        <activity
+            android:name=".Levelman"
+            android:exported="false" />
+        <activity
+            android:name=".Levelwoman"
+            android:exported="false" />
+        <activity
+            android:name=".GenderSelectionAction"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

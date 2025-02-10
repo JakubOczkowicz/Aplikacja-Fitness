@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Buttocks">
+
+    <Button
+        android:id="@+id/button_backbuttocks"
+        style="@style/Widget.Material3.Button.TextButton.Icon"
+        android:layout_width="267dp"
+        android:layout_height="39dp"
+        android:onClick="closeButtocks"
+        android:text="Wróć do poprzedniej strony"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="74dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_box"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/imgSquat"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:contentDescription="Przysiady"
+                android:scaleType="centerCrop"
+                android:src="@drawable/przysiady" />
+
+            <TextView
+                android:id="@+id/txtSquatDesc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="Przysiady - wzmacniają mięśnie pośladków i nóg."
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnSquat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:text="Wybierz"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_box"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/imgHipThrust"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:contentDescription="Hip Thrust"
+                android:scaleType="centerCrop"
+                android:src="@drawable/hiptrust" />
+
+            <TextView
+                android:id="@+id/txtHipThrustDesc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="Hip Thrust - skutecznie aktywuje mięśnie pośladków."
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnHipThrust"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:text="Wybierz"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_box"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/imgLunges"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:contentDescription="Wykroki"
+                android:scaleType="centerCrop"
+                android:src="@drawable/wykroki" />
+
+            <TextView
+                android:id="@+id/txtLungesDesc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="Wykroki - wzmacniają pośladki i poprawiają równowagę."
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnLunges"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:text="Wybierz"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

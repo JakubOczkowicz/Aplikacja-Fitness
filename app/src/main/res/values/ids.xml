@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <item name="button_chest" type="id" />
+        <item name="button_abs" type="id" />
+        <item name="button_glutes" type="id" />
+        <item name="button_legs" type="id" />
+        <item name="button_arms" type="id" />
+</resources>

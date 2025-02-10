@@ -12,7 +12,6 @@ import com.android.volley.Response
 import com.android.volley.toolbox.JsonObjectRequest
 import org.json.JSONObject
 
-
 class MainActivity : AppCompatActivity() {
 
     companion object {
@@ -50,6 +49,8 @@ class MainActivity : AppCompatActivity() {
         jsonObject.put("password",password)
         jsonObject.put("email","")
         jsonObject.put("query","")
+
+
 
         // Volley post request with parameters
         val requestPOST = JsonObjectRequest(Request.Method.POST,url,jsonObject,
@@ -94,4 +95,8 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
+
+
+
+
 }

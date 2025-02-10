@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Stomach">
+    <Button
+        android:id="@+id/button_backstomach"
+        style="@style/Widget.Material3.Button.TextButton.Icon"
+        android:layout_width="267dp"
+        android:layout_height="39dp"
+        android:onClick="closeStomach"
+        android:text="Wróć do poprzedniej strony"
+        android:textColor="@android:color/black"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Ćwiczenie: Plank -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_box"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/imgPlank"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:contentDescription="Plank"
+                android:scaleType="centerCrop"
+                android:src="@drawable/plank" />
+
+            <TextView
+                android:id="@+id/txtPlankDesc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="Plank - wzmacnia mięśnie core, poprawia stabilność."
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnPlank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:text="Wybierz"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- Ćwiczenie: Unoszenie nóg w zwisie -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_box"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/imgLegRaise"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:contentDescription="Unoszenie nóg w zwisie"
+                android:scaleType="centerCrop"
+                android:src="@drawable/zwis" />
+
+            <TextView
+                android:id="@+id/txtLegRaiseDesc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="Unoszenie nóg w zwisie - aktywuje dolne partie brzucha."
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnLegRaise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:text="Wybierz"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- Ćwiczenie: Brzuszki na ławce ujemnej -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_box"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/imgDeclineCrunch"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:contentDescription="Brzuszki na ławce ujemnej"
+                android:scaleType="centerCrop"
+                android:src="@drawable/lawka" />
+
+            <TextView
+                android:id="@+id/txtDeclineCrunchDesc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="Brzuszki na ławce ujemnej - angażuje mięśnie proste i skośne brzucha."
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnDeclineCrunch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:text="Wybierz"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

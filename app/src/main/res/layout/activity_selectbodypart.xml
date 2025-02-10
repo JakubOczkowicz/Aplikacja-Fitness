@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Selectbodypart">
+
+    <TextView
+        android:id="@+id/title_select"
+        android:layout_width="416dp"
+        android:layout_height="54dp"
+        android:background="@android:color/black"
+        android:padding="8dp"
+        android:text="Wybierz partię, którą chcesz ćwiczyć"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button_back1"
+        style="@style/Widget.Material3.Button.TextButton.Icon"
+        android:layout_width="267dp"
+        android:layout_height="39dp"
+        android:onClick="closeselectbody"
+        android:text="Wróć do poprzedniej strony"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="415dp"
+        android:layout_height="451dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.192"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_abs"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:onClick="onCreateStomach"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/image_abs"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:alpha="0.6"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/brzuch" />
+
+                    <TextView
+                        android:id="@+id/title_abs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Brzuch"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_arms"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:onClick="onCreateArms"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/image_arms"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:alpha="0.6"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/rece" />
+
+                    <TextView
+                        android:id="@+id/title_arms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Ręce"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_glutes"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:onClick="onCreateButtocks"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/image_glutes"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:alpha="0.6"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/posladki" />
+
+                    <TextView
+                        android:id="@+id/title_glutes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Pośladki"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_back"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:onClick="onCreateBack"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/image_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:alpha="0.6"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/plecy" />
+
+                    <TextView
+                        android:id="@+id/title_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Plecy"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_chest"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:onClick="onCreateChest"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/image_chest"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:alpha="0.6"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/klatka_piersiowa" />
+
+                    <TextView
+                        android:id="@+id/title_chest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Klatka piersiowa"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_legs"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:onClick="onCreateLegs"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/image_legs"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:alpha="0.6"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/nogi" />
+
+                    <TextView
+                        android:id="@+id/title_legs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Nogi"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

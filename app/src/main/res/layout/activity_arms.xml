@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Arms">
+
+    <Button
+        android:id="@+id/button_backarm"
+        style="@style/Widget.Material3.Button.TextButton.Icon"
+        android:layout_width="267dp"
+        android:layout_height="39dp"
+        android:onClick="closeArms"
+        android:text="Wróć do poprzedniej strony"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_box"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/imgBicepCurl"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:contentDescription="Uginanie ramion z chantlą"
+                android:scaleType="centerCrop"
+                android:src="@drawable/biceps" />
+
+            <TextView
+                android:id="@+id/txtBicepCurlDesc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="Uginanie ramion z chantlą - wzmacnia bicepsy i poprawia siłę ramion."
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnBicepCurl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:text="Wybierz"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_box"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/imgTricepDips"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:contentDescription="Wznosy na triceps"
+                android:scaleType="centerCrop"
+                android:src="@drawable/triceps" />
+
+            <TextView
+                android:id="@+id/txtTricepDipsDesc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="Wznosy na triceps - aktywniają triceps i poprawiają siłę górnej części ciała."
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnTricepDips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:text="Wybierz"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_box"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/imgHammerCurl"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:contentDescription="Uginanie ramion młotkowe"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ramiona" />
+
+            <TextView
+                android:id="@+id/txtHammerCurlDesc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="Uginanie ramion młotkowe - wzmacnia mięśnie ramienne i przedramiona."
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnHammerCurl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:text="Wybierz"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

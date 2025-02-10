@@ -16,6 +16,14 @@ import com.android.volley.toolbox.JsonObjectRequest
 import org.json.JSONObject
 
 class MainActivity3 : AppCompatActivity() {
+    companion object {
+        lateinit var ponTextViewsList: List<TextView>
+        lateinit var wtTextViewsList: List<TextView>
+        lateinit var śrTextViewsList: List<TextView>
+        lateinit var czwTextViewsList: List<TextView>
+        lateinit var ptTextViewsList: List<TextView>
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -25,7 +33,11 @@ class MainActivity3 : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
+        ponTextViewsList = emptyList()
+        wtTextViewsList= emptyList()
+        śrTextViewsList= emptyList()
+        czwTextViewsList= emptyList()
+        ptTextViewsList= emptyList()
     }
     fun onCreatePlanClicked(view: View) {
         val intent = Intent(this, GenderSelectionAction::class.java)
@@ -34,6 +46,11 @@ class MainActivity3 : AppCompatActivity() {
 
     fun onTimetableCheckClicked(view: View) {
         val intent = Intent(this, Harmonogram1::class.java)
+        startActivity(intent)
+    }
+
+    fun chcangeWindow(view: View) {
+        val intent = Intent(this, HarmonogramTrener::class.java)
         startActivity(intent)
     }
 }

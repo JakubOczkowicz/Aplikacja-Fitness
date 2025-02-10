@@ -7,17 +7,63 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:alpha="0.55"
-        android:background="@drawable/a"
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/hiddenLayout"
+        android:layout_width="293dp"
+        android:layout_height="281dp"
+        android:background="#2A2929"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45"
+        tools:visibility="visible">
 
-    </LinearLayout>
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="save"
+            android:text="Zatwierdź"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.854" />
+
+        <EditText
+            android:id="@+id/editor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#F8F8F8"
+            android:ems="10"
+            android:inputType="text"
+            app:layout_constraintBottom_toTopOf="@+id/button10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.707" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="214dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="44dp"
+            android:text="Wprowadź nazwę zajęć"
+            android:textColor="#F6F1F1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/editor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.531"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.025" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <Button
         android:id="@+id/cofnij"
@@ -29,10 +75,21 @@
         android:textColor="@android:color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.437"
+        app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.942" />
+        app:layout_constraintVertical_bias="0.95" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.55"
+        android:background="@drawable/a"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout3"
@@ -154,7 +211,6 @@
             android:layout_height="76dp"
             android:background="#4032CD32"
             android:gravity="center"
-            android:onClick="textViewClicked"
             android:text="pilates -\nmiejsca\n0/10"
             android:textSize="14sp"
             android:textStyle="bold" />
@@ -164,8 +220,8 @@
             android:layout_width="match_parent"
             android:layout_height="76dp"
             android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="Brak zajęć"
+            android:onClick="createClasses"
+            android:text="Stwórz zajęcia!"
             android:textStyle="bold" />
 
         <TextView
@@ -173,8 +229,8 @@
             android:layout_width="match_parent"
             android:layout_height="76dp"
             android:gravity="center"
-            android:text="Brak zajęć"
-            android:onClick="textViewClicked"
+            android:text="Stwórz zajęcia!"
+            android:onClick="createClasses"
             android:textStyle="bold" />
 
         <TextView
@@ -182,8 +238,8 @@
             android:layout_width="match_parent"
             android:layout_height="76dp"
             android:gravity="center"
-            android:text="TextView"
-            android:onClick="textViewClicked"
+            android:text="Stwórz zajęcia!"
+            android:onClick="createClasses"
             android:textStyle="bold" />
 
         <TextView
@@ -191,8 +247,8 @@
             android:layout_width="match_parent"
             android:layout_height="76dp"
             android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
+            android:text="Stwórz zajęcia!"
+            android:onClick="createClasses"
             android:textStyle="bold" />
 
         <TextView
@@ -200,8 +256,8 @@
             android:layout_width="match_parent"
             android:layout_height="76dp"
             android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
+            android:text="Stwórz zajęcia!"
+            android:onClick="createClasses"
             android:textStyle="bold" />
 
         <TextView
@@ -209,8 +265,8 @@
             android:layout_width="match_parent"
             android:layout_height="76dp"
             android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
+            android:text="Stwórz zajęcia!"
+            android:onClick="createClasses"
             android:textStyle="bold" />
 
         <TextView
@@ -218,8 +274,8 @@
             android:layout_width="match_parent"
             android:layout_height="76dp"
             android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
+            android:text="Stwórz zajęcia!"
+            android:onClick="createClasses"
             android:textStyle="bold" />
 
         <TextView
@@ -227,8 +283,8 @@
             android:layout_width="match_parent"
             android:layout_height="76dp"
             android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
+            android:onClick="createClasses"
+            android:text="Stwórz zajęcia!"
             android:textStyle="bold" />
 
     </LinearLayout>
@@ -259,18 +315,17 @@
             android:layout_width="match_parent"
             android:layout_height="76dp"
             android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
+            android:onClick="createClasses"
+            android:text="Stwórz zajęcia!"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView60"
             android:layout_width="match_parent"
             android:layout_height="76dp"
-            android:background="#80FF0000"
             android:gravity="center"
-            android:onClick="textViewClicked"
             android:text="body workout -\nmiejsca\n10/10"
+            android:background="#80FF0000"
             android:textSize="12sp"
             android:textStyle="bold" />
 
@@ -278,18 +333,18 @@
             android:id="@+id/textView61"
             android:layout_width="match_parent"
             android:layout_height="76dp"
+            android:onClick="createClasses"
             android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
+            android:text="Stwórz zajęcia!"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView62"
             android:layout_width="match_parent"
             android:layout_height="76dp"
-            android:onClick="textViewClicked"
+            android:onClick="createClasses"
             android:gravity="center"
-            android:text="TextView"
+            android:text="Stwórz zajęcia!"
             android:textStyle="bold" />
 
         <TextView
@@ -297,8 +352,8 @@
             android:layout_width="match_parent"
             android:layout_height="76dp"
             android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
+            android:onClick="createClasses"
+            android:text="Stwórz zajęcia!"
             android:textStyle="bold" />
 
         <TextView
@@ -306,8 +361,8 @@
             android:layout_width="match_parent"
             android:layout_height="76dp"
             android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
+            android:onClick="createClasses"
+            android:text="Stwórz zajęcia!"
             android:textStyle="bold" />
 
         <TextView
@@ -315,8 +370,8 @@
             android:layout_width="match_parent"
             android:layout_height="76dp"
             android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
+            android:onClick="createClasses"
+            android:text="Stwórz zajęcia!"
             android:textStyle="bold" />
 
         <TextView
@@ -324,8 +379,8 @@
             android:layout_width="match_parent"
             android:layout_height="76dp"
             android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
+            android:onClick="createClasses"
+            android:text="Stwórz zajęcia!"
             android:textStyle="bold" />
 
         <TextView
@@ -333,8 +388,8 @@
             android:layout_width="match_parent"
             android:layout_height="76dp"
             android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
+            android:onClick="createClasses"
+            android:text="Stwórz zajęcia!"
             android:textStyle="bold" />
 
     </LinearLayout>
@@ -365,8 +420,8 @@
             android:layout_width="match_parent"
             android:layout_height="76dp"
             android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
+            android:text="Stwórz zajęcia!"
+            android:onClick="createClasses"
             android:textStyle="bold" />
 
         <TextView
@@ -374,9 +429,9 @@
             android:layout_width="match_parent"
             android:layout_height="76dp"
             android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="pływanie-\nmiejsca\n9/10"
+            android:onClick="createClasses"
             android:background="#4032CD32"
+            android:text="pływanie-\nmiejsca\n9/10"
             android:textStyle="bold" />
 
         <TextView
@@ -384,8 +439,8 @@
             android:layout_width="match_parent"
             android:layout_height="76dp"
             android:gravity="center"
-            android:text="TextView"
-            android:onClick="textViewClicked"
+            android:onClick="createClasses"
+            android:text="Stwórz zajęcia!"
             android:textStyle="bold" />
 
         <TextView
@@ -393,8 +448,8 @@
             android:layout_width="match_parent"
             android:layout_height="76dp"
             android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
+            android:onClick="createClasses"
+            android:text="Stwórz zajęcia!"
             android:textStyle="bold" />
 
         <TextView
@@ -402,8 +457,8 @@
             android:layout_width="match_parent"
             android:layout_height="76dp"
             android:gravity="center"
-            android:text="TextView"
-            android:onClick="textViewClicked"
+            android:onClick="createClasses"
+            android:text="Stwórz zajęcia!"
             android:textStyle="bold" />
 
         <TextView
@@ -411,8 +466,8 @@
             android:layout_width="match_parent"
             android:layout_height="76dp"
             android:gravity="center"
-            android:text="TextView"
-            android:onClick="textViewClicked"
+            android:onClick="createClasses"
+            android:text="Stwórz zajęcia!"
             android:textStyle="bold" />
 
         <TextView
@@ -420,8 +475,8 @@
             android:layout_width="match_parent"
             android:layout_height="76dp"
             android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
+            android:onClick="createClasses"
+            android:text="Stwórz zajęcia!"
             android:textStyle="bold" />
 
         <TextView
@@ -429,17 +484,17 @@
             android:layout_width="match_parent"
             android:layout_height="76dp"
             android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
+            android:text="Stwórz zajęcia!"
+            android:onClick="createClasses"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView81"
             android:layout_width="match_parent"
             android:layout_height="76dp"
+            android:onClick="createClasses"
             android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
+            android:text="Stwórz zajęcia!"
             android:textStyle="bold" />
 
     </LinearLayout>
@@ -469,9 +524,9 @@
             android:id="@+id/textView87"
             android:layout_width="match_parent"
             android:layout_height="76dp"
+            android:onClick="createClasses"
             android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
+            android:text="Stwórz zajęcia!"
             android:textStyle="bold" />
 
         <TextView
@@ -479,17 +534,17 @@
             android:layout_width="match_parent"
             android:layout_height="76dp"
             android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
+            android:onClick="createClasses"
+            android:text="Stwórz zajęcia!"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView89"
             android:layout_width="match_parent"
             android:layout_height="76dp"
+            android:onClick="createClasses"
             android:gravity="center"
-            android:text="TextView"
-            android:onClick="textViewClicked"
+            android:text="Stwórz zajęcia!"
             android:textStyle="bold" />
 
         <TextView
@@ -497,8 +552,8 @@
             android:layout_width="match_parent"
             android:layout_height="76dp"
             android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
+            android:text="Stwórz zajęcia!"
+            android:onClick="createClasses"
             android:textStyle="bold" />
 
         <TextView
@@ -506,8 +561,8 @@
             android:layout_width="match_parent"
             android:layout_height="76dp"
             android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
+            android:text="Stwórz zajęcia!"
+            android:onClick="createClasses"
             android:textStyle="bold" />
 
         <TextView
@@ -515,17 +570,17 @@
             android:layout_width="match_parent"
             android:layout_height="76dp"
             android:gravity="center"
-            android:text="TextView"
-            android:onClick="textViewClicked"
+            android:onClick="createClasses"
+            android:text="Stwórz zajęcia!"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView93"
             android:layout_width="match_parent"
             android:layout_height="76dp"
-            android:onClick="textViewClicked"
             android:gravity="center"
-            android:text="TextView"
+            android:text="Stwórz zajęcia!"
+            android:onClick="createClasses"
             android:textStyle="bold" />
 
         <TextView
@@ -533,8 +588,8 @@
             android:layout_width="match_parent"
             android:layout_height="76dp"
             android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
+            android:text="Stwórz zajęcia!"
+            android:onClick="createClasses"
             android:textStyle="bold" />
 
         <TextView
@@ -542,8 +597,8 @@
             android:layout_width="match_parent"
             android:layout_height="76dp"
             android:gravity="center"
-            android:text="TextView"
-            android:onClick="textViewClicked"
+            android:onClick="createClasses"
+            android:text="Stwórz zajęcia!"
             android:textStyle="bold" />
 
     </LinearLayout>
@@ -574,8 +629,8 @@
             android:layout_width="match_parent"
             android:layout_height="76dp"
             android:gravity="center"
-            android:text="TextView"
-            android:onClick="textViewClicked"
+            android:text="Stwórz zajęcia!"
+            android:onClick="createClasses"
             android:textStyle="bold" />
 
         <TextView
@@ -583,8 +638,8 @@
             android:layout_width="match_parent"
             android:layout_height="76dp"
             android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
+            android:text="Stwórz zajęcia!"
+            android:onClick="createClasses"
             android:textStyle="bold" />
 
         <TextView
@@ -592,8 +647,8 @@
             android:layout_width="match_parent"
             android:layout_height="76dp"
             android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
+            android:text="Stwórz zajęcia!"
+            android:onClick="createClasses"
             android:textStyle="bold" />
 
         <TextView
@@ -601,8 +656,8 @@
             android:layout_width="match_parent"
             android:layout_height="76dp"
             android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
+            android:text="Stwórz zajęcia!"
+            android:onClick="createClasses"
             android:textStyle="bold" />
 
         <TextView
@@ -610,8 +665,8 @@
             android:layout_width="match_parent"
             android:layout_height="76dp"
             android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
+            android:text="Stwórz zajęcia!"
+            android:onClick="createClasses"
             android:textStyle="bold" />
 
         <TextView
@@ -619,8 +674,8 @@
             android:layout_width="match_parent"
             android:layout_height="76dp"
             android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
+            android:onClick="createClasses"
+            android:text="Stwórz zajęcia!"
             android:textStyle="bold" />
 
         <TextView
@@ -628,8 +683,8 @@
             android:layout_width="match_parent"
             android:layout_height="76dp"
             android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
+            android:onClick="createClasses"
+            android:text="Stwórz zajęcia!"
             android:textStyle="bold" />
 
         <TextView
@@ -637,8 +692,8 @@
             android:layout_width="match_parent"
             android:layout_height="76dp"
             android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
+            android:onClick="createClasses"
+            android:text="Stwórz zajęcia!"
             android:textStyle="bold" />
 
         <TextView
@@ -646,8 +701,8 @@
             android:layout_width="match_parent"
             android:layout_height="76dp"
             android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
+            android:onClick="createClasses"
+            android:text="Stwórz zajęcia!"
             android:textStyle="bold" />
 
     </LinearLayout>

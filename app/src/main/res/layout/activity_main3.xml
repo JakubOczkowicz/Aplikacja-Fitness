@@ -3,60 +3,66 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/gradient"
+    android:background="@drawable/tlo"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity3">
 
-    <TextView android:id="@+id/textViewLogged"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.511">
+
+        <Button
+            android:id="@+id/createPlanButton"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="12dp"
+            android:background="@color/black"
+            android:onClick="onCreatePlanClicked"
+            android:text="Stwórz swój własny plan treningowy"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginBottom="12dp"
+            android:background="@color/black"
+            android:onClick="onTimetableCheckClicked"
+            android:text="Zobacz harmonogram zajęć"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/black"
+            android:onClick="chcangeWindow"
+            android:text="Dodaj zajęcia do harmonogramu"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewLogged"
+        android:layout_width="348dp"
+        android:layout_height="62dp"
         android:layout_marginTop="28dp"
+        android:background="#80FFFFFF"
         android:text="Jesteś zalogowany!"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-
-    <Button
-        android:id="@+id/createPlanButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:onClick="onCreatePlanClicked"
-        android:text="Stwórz swój własny plan treningowy"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.631"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="278dp"
-        android:layout_height="wrap_content"
-        android:onClick="onTimetableCheckClicked"
-        android:text="Zobacz harmonogram zajęć"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.631"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.593" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="273dp"
-        android:layout_height="46dp"
-        android:onClick="chcangeWindow"
-        android:text="Dodaj zajęcia do harmonogramu"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.637"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.685" />
 </androidx.constraintlayout.widget.ConstraintLayout>

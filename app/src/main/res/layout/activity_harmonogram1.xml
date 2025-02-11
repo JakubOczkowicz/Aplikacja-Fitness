@@ -4,41 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
+    android:background="@drawable/a"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="449dp"
+        android:layout_height="812dp"
         android:alpha="0.55"
-        android:background="@drawable/a"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/cofnij"
-        style="@style/Widget.Material3.Button.TextButton.Icon"
-        android:layout_width="267dp"
-        android:layout_height="48dp"
-        android:onClick="close"
-        android:text="Wróć do poprzedniej strony"
-        android:textColor="@android:color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.437"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.942" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout3"
-        android:layout_width="64dp"
-        android:layout_height="715dp"
-        android:orientation="vertical"
+        android:background="#80FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -46,609 +20,603 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
 
-        <TextView
-            android:id="@+id/textView13"
-            android:layout_width="match_parent"
-            android:layout_height="30dp" />
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="64dp"
+            android:layout_height="715dp"
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textView14"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:elegantTextHeight="false"
-            android:gravity="center"
-            android:text="8:00"
-            android:textStyle="bold" />
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
 
-        <TextView
-            android:id="@+id/textView15"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:gravity="center"
-            android:text="9:00"
-            android:textStyle="bold" />
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:elegantTextHeight="false"
+                android:gravity="center"
+                android:text="8:00"
+                android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/textView16"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:gravity="center"
-            android:text="10:00"
-            android:textStyle="bold" />
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center"
+                android:text="9:00"
+                android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/textView17"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:gravity="center"
-            android:text="11:00"
-            android:textStyle="bold" />
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center"
+                android:text="10:00"
+                android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/textView18"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:gravity="center"
-            android:text="12:00"
-            android:textStyle="bold" />
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center"
+                android:text="11:00"
+                android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/textView19"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:gravity="center"
-            android:text="13:00"
-            android:textStyle="bold" />
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center"
+                android:text="12:00"
+                android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/textView20"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:gravity="center"
-            android:text="14:00"
-            android:textStyle="bold" />
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center"
+                android:text="13:00"
+                android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/textView31"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:gravity="center"
-            android:text="15:00"
-            android:textStyle="bold" />
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center"
+                android:text="14:00"
+                android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/textView32"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:gravity="center"
-            android:text="16:00"
-            android:textStyle="bold" />
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center"
+                android:text="15:00"
+                android:textStyle="bold" />
 
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center"
+                android:text="16:00"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pon"
+            android:layout_width="84dp"
+            android:layout_height="715dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="Poniedziałek"
+
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView45"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:background="#4032CD32"
+                android:gravity="center"
+                android:onClick="textViewClicked"
+                android:text="pilates -\nmiejsca\n0/10"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView46"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center"
+                android:onClick="textViewClicked"
+                android:text="Brak zajęć"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView47"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center"
+                android:onClick="textViewClicked"
+                android:text="Brak zajęć"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView48"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center"
+                android:onClick="textViewClicked"
+                android:text="TextView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView49"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center"
+                android:onClick="textViewClicked"
+                android:text="TextView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView50"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center"
+                android:onClick="textViewClicked"
+                android:text="TextView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView51"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center"
+                android:onClick="textViewClicked"
+                android:text="TextView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView52"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center"
+                android:onClick="textViewClicked"
+                android:text="TextView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView53"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center"
+                android:onClick="textViewClicked"
+                android:text="TextView"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/wt"
+            android:layout_width="60dp"
+            android:layout_height="715dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="Wtorek"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView59"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center"
+                android:onClick="textViewClicked"
+                android:text="TextView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView60"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:background="#80FF0000"
+                android:gravity="center"
+                android:onClick="textViewClicked"
+                android:text="body workout -\nmiejsca\n10/10"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView61"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center"
+                android:onClick="textViewClicked"
+                android:text="TextView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView62"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center"
+                android:onClick="textViewClicked"
+                android:text="TextView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView63"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center"
+                android:onClick="textViewClicked"
+                android:text="TextView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView64"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center"
+                android:onClick="textViewClicked"
+                android:text="TextView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView65"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center"
+                android:onClick="textViewClicked"
+                android:text="TextView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView66"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center"
+                android:onClick="textViewClicked"
+                android:text="TextView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView67"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center"
+                android:onClick="textViewClicked"
+                android:text="TextView"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/śr"
+            android:layout_width="63dp"
+            android:layout_height="715dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="Środa"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView73"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center"
+                android:onClick="textViewClicked"
+                android:text="TextView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView74"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:background="#4032CD32"
+                android:gravity="center"
+                android:onClick="textViewClicked"
+                android:text="pływanie-\nmiejsca\n9/10"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView75"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center"
+                android:onClick="textViewClicked"
+                android:text="TextView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView76"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center"
+                android:onClick="textViewClicked"
+                android:text="TextView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView77"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center"
+                android:onClick="textViewClicked"
+                android:text="TextView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView78"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center"
+                android:onClick="textViewClicked"
+                android:text="TextView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView79"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center"
+                android:onClick="textViewClicked"
+                android:text="TextView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView80"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center"
+                android:onClick="textViewClicked"
+                android:text="TextView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView81"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center"
+                android:onClick="textViewClicked"
+                android:text="TextView"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/czw"
+            android:layout_width="70dp"
+            android:layout_height="715dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="Czwartek"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView87"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center"
+                android:onClick="textViewClicked"
+                android:text="TextView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView88"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center"
+                android:onClick="textViewClicked"
+                android:text="TextView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView89"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center"
+                android:onClick="textViewClicked"
+                android:text="TextView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView90"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center"
+                android:onClick="textViewClicked"
+                android:text="TextView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView91"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center"
+                android:onClick="textViewClicked"
+                android:text="TextView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView92"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center"
+                android:onClick="textViewClicked"
+                android:text="TextView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView93"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center"
+                android:onClick="textViewClicked"
+                android:text="TextView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView94"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center"
+                android:onClick="textViewClicked"
+                android:text="TextView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView95"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center"
+                android:onClick="textViewClicked"
+                android:text="TextView"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pt"
+            android:layout_width="68dp"
+            android:layout_height="715dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="Piątek"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView100"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center"
+                android:onClick="textViewClicked"
+                android:text="TextView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView102"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center"
+                android:onClick="textViewClicked"
+                android:text="TextView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView103"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center"
+                android:onClick="textViewClicked"
+                android:text="TextView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView104"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center"
+                android:onClick="textViewClicked"
+                android:text="TextView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView105"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center"
+                android:onClick="textViewClicked"
+                android:text="TextView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView106"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center"
+                android:onClick="textViewClicked"
+                android:text="TextView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView107"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center"
+                android:onClick="textViewClicked"
+                android:text="TextView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView108"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center"
+                android:onClick="textViewClicked"
+                android:text="TextView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView109"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center"
+                android:onClick="textViewClicked"
+                android:text="TextView"
+                android:textStyle="bold" />
+
+        </LinearLayout>
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/pon"
-        android:layout_width="84dp"
-        android:layout_height="715dp"
-        android:orientation="vertical"
+    <Button
+        android:id="@+id/button_backarm2"
+        style="@style/Widget.Material3.Button.TextButton.Icon"
+        android:layout_width="267dp"
+        android:layout_height="39dp"
+        android:onClick="closeHarmonogram"
+        android:text="Wróć do poprzedniej strony"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.193"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
-
-        <TextView
-            android:id="@+id/textView26"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:gravity="center"
-            android:text="Poniedziałek"
-            android:textSize="14sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView45"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:background="#4032CD32"
-            android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="pilates -\nmiejsca\n0/10"
-            android:textSize="14sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView46"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="Brak zajęć"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView47"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:gravity="center"
-            android:text="Brak zajęć"
-            android:onClick="textViewClicked"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView48"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:gravity="center"
-            android:text="TextView"
-            android:onClick="textViewClicked"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView49"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView50"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView51"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView52"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView53"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
-            android:textStyle="bold" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/wt"
-        android:layout_width="60dp"
-        android:layout_height="715dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.424"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
-
-        <TextView
-            android:id="@+id/textView27"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:gravity="center"
-            android:text="Wtorek"
-            android:textAlignment="center"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView59"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView60"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:background="#80FF0000"
-            android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="body workout -\nmiejsca\n10/10"
-            android:textSize="12sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView61"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView62"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:onClick="textViewClicked"
-            android:gravity="center"
-            android:text="TextView"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView63"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView64"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView65"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView66"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView67"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
-            android:textStyle="bold" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/śr"
-        android:layout_width="63dp"
-        android:layout_height="715dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
-
-        <TextView
-            android:id="@+id/textView28"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:gravity="center"
-            android:text="Środa"
-            android:textAlignment="center"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView73"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView74"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="pływanie-\nmiejsca\n9/10"
-            android:background="#4032CD32"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView75"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:gravity="center"
-            android:text="TextView"
-            android:onClick="textViewClicked"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView76"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView77"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:gravity="center"
-            android:text="TextView"
-            android:onClick="textViewClicked"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView78"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:gravity="center"
-            android:text="TextView"
-            android:onClick="textViewClicked"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView79"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView80"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView81"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
-            android:textStyle="bold" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/czw"
-        android:layout_width="70dp"
-        android:layout_height="715dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.794"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
-
-        <TextView
-            android:id="@+id/textView29"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:gravity="center"
-            android:text="Czwartek"
-            android:textAlignment="center"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView87"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView88"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView89"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:gravity="center"
-            android:text="TextView"
-            android:onClick="textViewClicked"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView90"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView91"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView92"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:gravity="center"
-            android:text="TextView"
-            android:onClick="textViewClicked"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView93"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:onClick="textViewClicked"
-            android:gravity="center"
-            android:text="TextView"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView94"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView95"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:gravity="center"
-            android:text="TextView"
-            android:onClick="textViewClicked"
-            android:textStyle="bold" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/pt"
-        android:layout_width="68dp"
-        android:layout_height="715dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
-
-        <TextView
-            android:id="@+id/textView30"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:gravity="center"
-            android:text="Piątek"
-            android:textAlignment="center"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView100"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:gravity="center"
-            android:text="TextView"
-            android:onClick="textViewClicked"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView102"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView103"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView104"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView105"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView106"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView107"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView108"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView109"
-            android:layout_width="match_parent"
-            android:layout_height="76dp"
-            android:gravity="center"
-            android:onClick="textViewClicked"
-            android:text="TextView"
-            android:textStyle="bold" />
-
-    </LinearLayout>
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,6 +14,7 @@
         android:layout_width="267dp"
         android:layout_height="39dp"
         android:onClick="closeLevelMan"
+        android:textSize="18sp"
         android:text="Wróć do poprzedniej strony"
         android:textColor="@android:color/black"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -22,7 +23,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
-    <!-- Beginner Level Card -->
     <androidx.cardview.widget.CardView
         android:id="@+id/card_basic"
         android:layout_width="340dp"

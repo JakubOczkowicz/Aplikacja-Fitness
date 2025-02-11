@@ -43,7 +43,7 @@ class MainActivity3 : AppCompatActivity() {
         val intent = Intent(this, GenderSelectionAction::class.java)
         startActivity(intent)
     }
-    fun closeac3(view: View){
+    fun closeMain3(view: View){
         finish()
     }
     fun onTimetableCheckClicked(view: View) {
@@ -55,4 +55,5 @@ class MainActivity3 : AppCompatActivity() {
         val intent = Intent(this, HarmonogramTrener::class.java)
         startActivity(intent)
     }
+
 }

@@ -78,6 +78,24 @@ class Harmonogram1 : AppCompatActivity() {
     }
 
     fun close(view: View){
+        val pon = findViewById<LinearLayout>(R.id.pon)
+        val wt = findViewById<LinearLayout>(R.id.wt)
+        val śr = findViewById<LinearLayout>(R.id.śr)
+        val czw = findViewById<LinearLayout>(R.id.czw)
+        val pt = findViewById<LinearLayout>(R.id.pt)
+
+        var ponTextViewsList = pon.children.filterIsInstance<TextView>()
+        var wtTextViewsList = wt.children.filterIsInstance<TextView>()
+        var śrTextViewsList = śr.children.filterIsInstance<TextView>()
+        var czwTextViewsList = czw.children.filterIsInstance<TextView>()
+        var ptTextViewsList = pt.children.filterIsInstance<TextView>()
+
+
+        MainActivity3.ponTextViewsList = ponTextViewsList.drop(1).toList()
+        MainActivity3.wtTextViewsList = wtTextViewsList.drop(1).toList()
+        MainActivity3.śrTextViewsList = śrTextViewsList.drop(1).toList()
+        MainActivity3.czwTextViewsList = czwTextViewsList.drop(1).toList()
+        MainActivity3.ptTextViewsList = ptTextViewsList.drop(1).toList()
         finish()
     }
 

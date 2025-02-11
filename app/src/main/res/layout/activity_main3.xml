@@ -59,6 +59,7 @@
         android:layout_marginTop="28dp"
         android:background="#80FFFFFF"
         android:textColor="@color/black"
+        android:gravity="center"
         android:text="Jesteś zalogowany!"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"

@@ -25,6 +25,9 @@ class MainActivity2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
     }
+    fun closeac2(view: View){
+        finish()
+    }
 
 
     fun onClickSwitchToLogin(v: View) {

@@ -77,7 +77,7 @@ class Harmonogram1 : AppCompatActivity() {
         }
     }
 
-    fun close(view: View){
+    fun closeHarmonogram(view: View){
         finish()
     }
 

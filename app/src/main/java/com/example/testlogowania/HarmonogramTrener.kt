@@ -70,7 +70,7 @@ class HarmonogramTrener : AppCompatActivity() {
         }
     }
 
-    fun close(view: View){
+    fun closetrener(view: View){
         val pon = findViewById<LinearLayout>(R.id.pon)
         val wt = findViewById<LinearLayout>(R.id.wt)
         val śr = findViewById<LinearLayout>(R.id.śr)

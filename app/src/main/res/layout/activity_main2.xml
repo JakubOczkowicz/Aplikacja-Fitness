@@ -106,7 +106,7 @@
         android:minHeight="48dp"
         android:onClick="onClickSwitchToLogin"
         android:text="@string/zaloguj_sie"
-        android:textColor="@color/purple_500"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.724"
         app:layout_constraintStart_toStartOf="parent"

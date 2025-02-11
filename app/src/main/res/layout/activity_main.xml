@@ -15,6 +15,7 @@
     android:onClick="onClickLogin"
     android:text="@string/zaloguj_sie"
     android:textSize="20sp"
+
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintHorizontal_bias="0.5"
@@ -67,7 +68,7 @@
     android:layout_marginTop="32dp"
     android:onClick="onClickSwitchToRegister"
     android:text="@string/zarejestruj_sie"
-    android:textColor="@color/purple_500"
+    android:textColor="@color/black"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintHorizontal_bias="0.721"
     app:layout_constraintStart_toStartOf="parent"

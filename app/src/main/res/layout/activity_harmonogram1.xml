@@ -144,7 +144,6 @@
             android:layout_height="30dp"
             android:gravity="center"
             android:text="Poniedziałek"
-
             android:textSize="14sp"
             android:textStyle="bold" />
 

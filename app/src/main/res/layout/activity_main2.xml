@@ -22,56 +22,59 @@
         app:layout_constraintTop_toBottomOf="@+id/textView7"
         tools:ignore="DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck"/>
 
-    <EditText android:id="@+id/registerUserEditText"
+    <EditText
+        android:id="@+id/registerUserEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
+        android:background="#80FFFFFF"
         android:ems="10"
         android:hint="@string/username"
         android:inputType="textEmailAddress"
-        android:textColorHint="@color/black"
-        android:background="#80FFFFFF"
-        android:textColor="@color/white"
         android:minHeight="48dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/registerTextView"
-        tools:ignore="TextContrastCheck,TextContrastCheck"/>
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
 
-    <EditText android:id="@+id/registerEmailEditText"
+    <EditText
+        android:id="@+id/registerEmailEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
+        android:background="#80FFFFFF"
         android:ems="10"
         android:hint="@string/email"
         android:inputType="textEmailAddress"
-        android:textColorHint="@color/black"
         android:minHeight="48dp"
-        android:background="#80FFFFFF"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/registerUserEditText"
-        tools:ignore="TextContrastCheck,TextContrastCheck"/>
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
 
-    <EditText android:id="@+id/registerPasswordlEditText"
+    <EditText
+        android:id="@+id/registerPasswordlEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
+        android:background="#80FFFFFF"
         android:ems="10"
         android:hint="@string/password"
         android:inputType="textPassword"
-        android:background="#80FFFFFF"
-        android:textColor="@color/white"
-        android:textColorHint="@color/black"
         android:minHeight="48dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/registerEmailEditText"
-        tools:ignore="TextContrastCheck,TextContrastCheck"/>
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
 
     <EditText android:id="@+id/registerConfirmPasswordlEditText"
         android:layout_width="wrap_content"
